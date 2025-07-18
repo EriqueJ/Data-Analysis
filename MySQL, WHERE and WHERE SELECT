@@ -1,0 +1,17 @@
+- SELECT AND SELECT WHERE
+-- Dataset used; access_to_basic_services
+-- Which country had the lowest percentage of people with access to managed water services in 2020 ?
+SELECT
+	Country_name,
+    Time_period,
+    Pct_managed_drinking_water_services,
+    Est_population_in_millions,
+    Est_gdp_in_billions
+FROM 
+	united_nations.access_to_basic_services
+WHERE
+	Time_period = 2020;
+    
+    
+-- Results; After running the query, we click on the Pct_managed_drinking_water_services column to arrange the values in descending order.
+-- We are able to observe that the Country with lowest percentage of people with access to managed water services in 2020 is Central African Republic with 38.33%.
